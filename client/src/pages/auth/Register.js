@@ -6,7 +6,7 @@ import { toast } from "react-toastify";
 import { useSelector } from "react-redux";
 
 const Register = ({ history }) => {
-  const [email, setEmail] = useState("sp0715007@gmail.com");
+  const [email, setEmail] = useState("");
   const { user } = useSelector((state) => ({ ...state }));
   useEffect(() => {
     if (user && user.token) {
